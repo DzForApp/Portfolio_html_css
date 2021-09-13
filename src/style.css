@@ -1,0 +1,118 @@
+body {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: tomato;
+    margin-top: 0%;
+}
+.grid-container {
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "lg mg mg rg"
+    "lg mg mg rg"
+    "lg mg mg rg"
+    "lg ft ft rg";
+    height: 100%;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    
+    background-color: whitesmoke;
+  
+  }
+  .grid-container > * {
+    
+      height: 100%;
+  
+  }
+  .left_grid {
+    position: relative; 
+    grid-area: lg;
+    width: 100%;
+    margin-left:50%;
+    background-color: green;
+  } 
+  .right_grid {
+    grid-area: rg;
+    width: 120%;
+    margin-right: 50%;
+    background-color: yellow
+  } 
+
+  main{
+     justify-self: center; /* justify the main grid it self on center*/
+     grid-area: mg;
+     background-color:teal;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin-top: 0%;
+     width: 80%;
+  }
+  ul {
+    list-style: none;
+  }
+  /**************************************************************************************************/
+  /* Style for main section*/
+.welcom_panel {
+      display: flex;
+      flex-direction: row ;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      background-color: yellow;
+      color:white ;
+      box-shadow: black;
+  
+  }
+.welcom_text {
+   
+    background-color: green;
+    margin: 5px;
+    /*flex-grow: 0; /* change the size of the box inside the flex section in the direction*/
+    font-size: 1.4rem;
+    margin-top: 0%;
+    width: 50%;
+    text-align: left;
+    margin-left: 0%;   
+}
+.welcom_text_detail {
+    align-items: center;
+    background-color: tomato;
+    text-align: left;
+    width: 100%;
+    
+}
+.welcom_svg {
+    margin: 5px;
+
+    background-color: wheat;
+}
+.service_panel > ul  {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap; /*  to splite the row of the flex box items */
+    align-content: center;  /* to align items verticaly*/
+    justify-content: space-evenly; /* to align items hotizontaly*/
+    margin-bottom: 10%;
+    margin-top: 10%;
+    background-color: tomato;
+    
+    
+}
+.service_panel > ul > li {
+    border: solid;
+    padding: 2%;
+    margin: 5%;
+   
+
+}
+/**************************************************************************************************/
+  footer{
+      position: relative;
+      margin-bottom: 0%;
+      grid-area: ft;
+      height: 10px;
+      background-color: blueviolet;
+  }

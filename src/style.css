@@ -1,19 +1,26 @@
 body {
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    background-color: tomato;
-    margin-top: 0%;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(240, 240, 246);
+  color: rgb(118, 118, 118);
+  transition: all 300ms ease-in 0s;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  letter-spacing: -0.015em;
+  text-align: left;
+  scroll-behavior: smooth;
 }
 .grid-container {
 
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 5px;
     grid-template-areas: 
-    "lg mg mg rg"
-    "lg mg mg rg"
-    "lg mg mg rg"
-    "lg ft ft rg";
+    "lg lg mg mg rg"
+    "lg lg mg mg rg"
+    "lg lg mg mg rg"
+    "lg lg ft ft rg";
     height: 100%;
     width: 100%;
     position: relative;
@@ -28,28 +35,34 @@ body {
   
   }
   .left_grid {
-    position: relative; 
+    position: fixed; 
+    display: table-cell;
+    z-index: 9999;
+    transition: all 300ms ease-in 0s;
     grid-area: lg;
-    width: 100%;
-    margin-left:50%;
-    background-color: green;
+    width: 10%;
+    margin-left: 10%;
+    box-shadow: rgb(47 122 249 / 10%) 4px 0px 10px;
+    background: rgb(255, 255, 255);
   } 
   .right_grid {
+    position: fixed;
     grid-area: rg;
-    width: 120%;
-    margin-right: 50%;
-    background-color: yellow
+    width: 10%;
+    margin-left: 80%;
+    background: rgb(255, 255, 255);
   } 
 
   main{
      justify-self: center; /* justify the main grid it self on center*/
      grid-area: mg;
-     background-color:teal;
+     
      display: flex;
      flex-direction: column;
      justify-content: center;
      margin-top: 0%;
      width: 80%;
+      
   }
   ul {
     list-style: none;
@@ -61,17 +74,18 @@ body {
       flex-direction: row ;
       flex-wrap: wrap;
       justify-content: space-evenly;
-      background-color: yellow;
-      color:white ;
+      background: rgb(255, 255, 255);
+      color:black ;
       box-shadow: black;
+      box-shadow: rgb(47 122 249 / 10%) 4px 0px 10px;
   
   }
 .welcom_text {
    
-    background-color: green;
+  
     margin: 5px;
     /*flex-grow: 0; /* change the size of the box inside the flex section in the direction*/
-    font-size: 1.4rem;
+ 
     margin-top: 0%;
     width: 50%;
     text-align: left;
@@ -79,7 +93,7 @@ body {
 }
 .welcom_text_detail {
     align-items: center;
-    background-color: tomato;
+    
     text-align: left;
     width: 100%;
     
@@ -111,8 +125,12 @@ body {
 /**************************************************************************************************/
   footer{
       position: relative;
-      margin-bottom: 0%;
+      display: flex;
+      min-height: 70px;
+      margin-bottom: 0px;
       grid-area: ft;
-      height: 10px;
-      background-color: blueviolet;
+      height: 100%;
+      width: 100%;
+      margin-left: 0%;
+      box-shadow: rgb(0 0 0 / 100%) -1px -1px 10px;
   }

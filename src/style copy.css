@@ -173,13 +173,11 @@ button {
   height: 1000px;
   position: relative;
   margin: auto;
+  top: 100px;
 }
-.Containers {
-  display: none;
-}
-
+  
 /* Hide the images by default */
-.mySlides {
+.Containers {
   display: none;
 }
 
@@ -222,6 +220,7 @@ button {
    top: 0px;
  }
  .dote {
+  cursor: pointer;
     background-color: black;
     color: #ebc72b;
     height: 16px;

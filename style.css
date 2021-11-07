@@ -118,6 +118,9 @@ a:active {
   height: 50px;
   background-color: #fcc603;
 }
+.download_btn a {
+  color: black;
+}
 .quote_btn {
   border: #f2f2f3;
   height: 50px;
@@ -128,7 +131,7 @@ a:active {
   margin-top: 100px;
   
   width:100%;
-  height: 800px;
+  height: 550px;
   text-align: center;
   justify-content: center;
  background-color: #fcc603;
